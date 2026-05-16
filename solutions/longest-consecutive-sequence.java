@@ -1,0 +1,1 @@
+import java.util.HashSet;import java.util.Set;class Solution {public int longestConsecutive(int[] nums) {if (nums == null || nums.length == 0) return 0;Set<Integer> s = new HashSet<>();for (int n : nums) s.add(n);int best = 0;for (int n : s) {// only start from sequence startsif (!s.contains(n - 1)) {int len = 1;int cur = n;while (s.contains(cur + 1)) {cur++;len++;
