@@ -1,1 +1,1 @@
-while(low < high){int mid = low + (high - low) / 2; // 1if(arr.get(mid) >= arr.get(mid + 1)) {high = mid; // 0}else{low = mid + 1;}// else if(arr[mid] < arr[mid + 1])}// we can print low or end because both are pointing at same indexreturn low;}- if arr[mid] > arr[mid + 1]-      2      >    1*/
+int low = 0;static int peakInArr(MountainArray arr){}}}return -1;}low = mid - 1;}else{high = mid + 1;if(arr.get(mid) > target){}return mid;
