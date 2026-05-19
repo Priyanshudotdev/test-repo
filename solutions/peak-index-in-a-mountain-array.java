@@ -1,1 +1,1 @@
-class Solution {public int peakIndexInMountainArray(int[] arr) {int i = 0;while(arr[i] < arr[i+1]){i++;}return i;}}
+}static int bruteForceMethod(int[] arr){int i = 0;while(arr[i] < arr[i+1]){i++;}return i;}static int optimalMethod(int[] arr){int low = 0;int high = arr.length - 1;/*- one loop from start and one from end ??- if arr[mid] > arr[mid + 1]-      2      >    1*/while(low < high){int mid = low + (high - low) / 2;if(arr[mid] > arr[mid + 1]){return mid;public int peakIndexInMountainArray(int[] arr) {return optimalMethod(arr);class Solution {}else{low = mid + 1;}}
