@@ -1,1 +1,1 @@
-class Solution {static int[] searchRange(int[] nums, int target){return bruteForceSolution(nums,target);}static int[] bruteForceSolution(int[] nums, int target){// static int[]·optimalSolution(int[]·nums,·int·target){····//·}}}
+int mid = low + (high - low) / 2;if(nums[mid] == target){ans = mid;if(findFirstIndex) high = mid - 1;else low = mid + 1;int ans = -1;while(low <= high){static int bSreach(int[] nums,int target, boolean findFirstIndex){int low = 0;int high = nums.length - 1;return new int[]{-1,-1};}int last = bSreach(nums, target, false);return new int[]{first, last};}
