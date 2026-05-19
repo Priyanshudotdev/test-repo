@@ -1,1 +1,1 @@
-class Solution {public int[] searchRange(int[] nums, int target) {int low = 0;int high = nums.length;while(low < high){int mid = low + (high - low) / 2;if(nums[mid] == target){return new int[]{mid, mid+1};}if(nums[mid] > target){high = mid - 1;}else{low = mid + 1;}}return new int[]{-1,-1};
+if(nums[mid + 1] == target) return new int[]{mid, mid+1};else return new int[]{mid, mid};}if(nums[mid] > target){high = mid - 1;}else{low = mid + 1;}}return new int[]{-1,-1};}}if(nums[mid] == target){
