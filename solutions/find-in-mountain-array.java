@@ -1,0 +1,1 @@
+return bruteForcemethod(target, mountainArr);}static int bruteForcemethod(int target, MountainArray nums){for(int i = 0; i < mountainArr.length() - 1; i++){int elem = mountainArr.get(i);if(elem == target){class Solution {public int findInMountainArray(int target, MountainArray mountainArr) {*/return i;}}return -1;}}
