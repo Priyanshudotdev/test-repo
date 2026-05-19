@@ -1,1 +1,1 @@
-if(nums[mid + 1] == target) return new int[]{mid, mid+1};else return new int[]{mid, mid};}if(nums[mid] > target){high = mid - 1;}else{low = mid + 1;}}return new int[]{-1,-1};}}if(nums[mid] == target){
+static int[] searchRange(int[] nums, int target){return bruteForceSolution(nums,target);}static int[] bruteForceSolution(int[] nums, int target){int first = -1;int last = -1;for(int i = 0; i < nums.length; i++){if(nums[i] == target){}if(first != -1){}last = i;}else{first = i;}return new int[]{first,last};}
