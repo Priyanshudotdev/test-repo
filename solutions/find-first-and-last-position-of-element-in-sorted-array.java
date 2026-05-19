@@ -1,1 +1,1 @@
-class Solution {static int[] searchRange(int[] nums, int target){return bruteForceSolution(nums,target);}static int[] bruteForceSolution(int[] nums, int target){static int[] optimalSolution(int[] nums, int target){}}}
+class Solution {static int[] searchRange(int[] nums, int target){return bruteForceSolution(nums,target);}static int[] bruteForceSolution(int[] nums, int target){// static int[]·optimalSolution(int[]·nums,·int·target){····//·}}}
