@@ -1,1 +1,1 @@
-high = mid; // 0}else{low = mid + 1;}// else if(arr[mid] < arr[mid + 1])}// we can print low or end because both are pointing at same indexreturn low;}}
+while(low < high){static int optimalMethod(int target, MountainArray arr){int low = 0;int high = peakInArr(arr);return optimalMethod(target, mountainArr);}class Solution {public int findInMountainArray(int target, MountainArray mountainArr) {* }*/int mid = low + (high - low) / 2;if(arr.get(mid) == target){
