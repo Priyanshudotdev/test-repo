@@ -1,1 +1,1 @@
--      2      >    1*//*- one loop from start and one from end ??- if arr[mid] > arr[mid + 1]int high = arr.length - 1;static int optimalMethod(int[] arr){int low = 0;public int findPeakElement(int[] nums) {return optimalMethod(nums);}class Solution {
+*/- one loop from start and one from end ??- if arr[mid] > arr[mid + 1]-      2      >    1int high = arr.length - 1;/*static int optimalMethod(int[] arr){int low = 0;return bruteForceMethod(nums);}class Solution {public int findPeakElement(int[] nums) {
