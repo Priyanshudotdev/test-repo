@@ -1,1 +1,1 @@
-int low = 0;static int peakInArr(MountainArray arr){}}}return -1;}low = mid - 1;}else{high = mid + 1;if(arr.get(mid) > target){}return mid;
+return bSearch(arr, peak+1, arr.length() - 1 , target);}return firstTry;if(firstTry != -1){int firstTry = bSearch(arr, 0, peak, target);int peak = peakInArr(arr);static int optimalMethod(int target, MountainArray arr){}return optimalMethod(target, mountainArr);public int findInMountainArray(int target, MountainArray mountainArr) {class Solution {*/
