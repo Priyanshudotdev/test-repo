@@ -1,0 +1,1 @@
+else low = mid + 1;}return -1;}static int findPivot(int nums[]){if(nums.length == 1){while(nums[i] < nums[i+1]){i++;}return i;int i = 0;return 0;}}}
