@@ -1,1 +1,1 @@
-}static int optimalMethod(int target, int arr[]){class Solution {public int findInMountainArray(int target, MountainArray mountainArr) {return optimalMethod(target, mountainArr);* }*/*     public int length() {}int low = 0;int high = peakInArr(arr);while(low < high){int mid = low + (high - low) / 2;
+high = mid; // 0}else{low = mid + 1;}// else if(arr[mid] < arr[mid + 1])}// we can print low or end because both are pointing at same indexreturn low;}}
