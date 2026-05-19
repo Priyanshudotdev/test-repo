@@ -1,1 +1,1 @@
-static int[] searchRange(int[] nums, int target){return bruteForceSolution(nums,target);}static int[] bruteForceSolution(int[] nums, int target){int first = -1;int last = -1;for(int i = 0; i < nums.length; i++){if(nums[i] == target){}if(first != -1){}last = i;}else{first = i;}return new int[]{first,last};}
+int first = -1;int last = -1;for(int i = 0; i < nums.length; i++){if(nums[i] == target){}first = i;}// from startbreak;for(int j = nums.length - 1; j >= 0; j--){if(nums[j] == target){last = j;break;}}return new int[]{first,last};}
