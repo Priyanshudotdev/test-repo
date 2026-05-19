@@ -1,0 +1,1 @@
+if(nums[mid] == target && !flag){return new int[]{mid, mid+1};}if(nums[mid] > target){high = mid - 1;}else{low = mid + 1;}}return new int[]{-1,-1};}}int mid = low + (high - low) / 2;
