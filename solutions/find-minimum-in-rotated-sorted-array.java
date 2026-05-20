@@ -1,0 +1,1 @@
+if (mid < high && nums[mid] > nums[mid + 1]) return nums[mid+1];if (mid > low && nums[mid] < nums[mid - 1]) return nums[mid];while(low <= high){int mid = low + (high - low) / 2;int high = nums.length - 1;if (nums[low] <= nums[high]) return nums[low];static int findPeak(int nums[]){int low = 0;return findPeak(nums);}class Solution {public int findMin(int[] nums) {
