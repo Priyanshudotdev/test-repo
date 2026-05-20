@@ -1,1 +1,1 @@
-class Solution {public boolean searchMatrix(int[][] matrix, int target) {int row = 0;int col = matrix.length - 1;while(row < col){if(matrix[row][col] == target) return true;if(matrix[row][col] > target) col--;else row++;}return false;}}
+class Solution {public boolean searchMatrix(int[][] matrix, int target) {int row = 0;int col = matrix.length - 1;while(row <= col){if(matrix[row][col] == target) return true;if(matrix[row][col] > target) col--;else row++;}return false;}}
