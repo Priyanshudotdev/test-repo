@@ -1,0 +1,1 @@
+public static void main(String[] args) {int[] nums = {1, 3, 4, 2, 2};System.out.println(findDuplicate(nums));}public static int findDuplicate(int[] nums) {Set<Integer> seen = new HashSet<>();for (int n : nums) {if (seen.contains(n)) {return n;}seen.add(n);}return -1;}}
