@@ -1,1 +1,1 @@
-while (mid <= high) {if (nums[mid] == 0) {swap(nums, low++, mid++);} else if (nums[mid] == 1) {mid++;} else { // nums[mid] == 2swap(nums, mid, high--);}}}private void swap(int[] a, int i, int j) {int t = a[i];a[i] = a[j];a[j] = t;}}
+nums[i] = 0;red--;}else if(red <= 0 && white > 0){nums[i] = 1;white--;}if(red > 0){for(int i = 0; i < nums.length; i++){else {nums[i] = 2;blue--;}}}}
