@@ -1,1 +1,1 @@
-while(mid <= high){if(nums[mid] == 0){int temp = nums[low];nums[low] = nums[mid];nums[mid] = temp;mid++;low++;int high = nums.length - 1;int low = 0;int mid = 0;*/}else if(nums[mid] == 1){mid++;} else{int temp = nums[mid];nums[mid] = nums[high];nums[high] = temp;
+if(nums[i] == 2){// swap it with highint temp = nums[i];nums[i] = nums[high];nums[high] = temp;i--;high--;}else if(nums[i] == 0){int temp = nums[i];nums[i] = nums[low];nums[low] = temp;low++;}i++;}while(i <= high){int i = 0; // current index}
