@@ -1,1 +1,1 @@
-}static void bruteForceMethod(int[] nums){static void optimalMethod(int[] nums){for(int i = 0; i < nums.length; i++){}optimalMethod(nums);public void sortColors(int[] nums) {class Solution {for(int j = i; j < nums.length; j++){}if(nums[i] > nums[j]){}int temp = nums[i];}nums[i] = nums[j];nums[j] = temp;
+while(mid <= high){if(nums[mid] == 0){int temp = nums[low];nums[low] = nums[mid];nums[mid] = temp;mid++;low++;int high = nums.length - 1;int low = 0;int mid = 0;*/}else if(nums[mid] == 1){mid++;} else{int temp = nums[mid];nums[mid] = nums[high];nums[high] = temp;
