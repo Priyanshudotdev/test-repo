@@ -1,0 +1,1 @@
+}}}map.computeIfAbsent(row, k -> new ArrayList<>()).add(col);if(matrix[row][col] == 0){for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {int row = entry.getKey();for (int col : entry.getValue()) {for (int c = 0; c < matrix[row].length; c++) {matrix[row][c] = 0;}for (int r = 0; r < matrix.length; r++) {matrix[r][col] = 0;}}}
