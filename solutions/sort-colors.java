@@ -1,1 +1,1 @@
-nums[i] = 0;red--;}else if(red <= 0 && white > 0){nums[i] = 1;white--;}if(red > 0){for(int i = 0; i < nums.length; i++){else {nums[i] = 2;blue--;}}}}
+}static void bruteForceMethod(int[] nums){static void optimalMethod(int[] nums){for(int i = 0; i < nums.length; i++){}optimalMethod(nums);public void sortColors(int[] nums) {class Solution {for(int j = i; j < nums.length; j++){}if(nums[i] > nums[j]){}int temp = nums[i];}nums[i] = nums[j];nums[j] = temp;
