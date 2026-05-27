@@ -1,1 +1,1 @@
-import java.util.HashSet;class Solution {public boolean containsDuplicate(int[] nums) {HashSet<Integer> set = new HashSet<>();for (int num:nums) {if(set.contains(num)){return true;}set.add(num);}return false;}}
+//     }//     set.add(num);// }// return false;Arrays.sort(nums);for (int i = 0; i < nums.length; i++) {if(i+1 < nums.length && nums[i] == nums[i+1]){return true;}}return false;}}
