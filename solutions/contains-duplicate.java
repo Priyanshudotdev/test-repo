@@ -1,1 +1,1 @@
-//     }//     set.add(num);// }// return false;Arrays.sort(nums);for (int i = 0; i < nums.length; i++) {if(i+1 < nums.length && nums[i] == nums[i+1]){return true;}}return false;}}
+for (int num:nums) {if (!seen.add(num)) return true;static boolean betterMethod(int[] nums){HashSet<Integer> set = new HashSet<>();}public boolean containsDuplicate(int[] nums) {return betterMethod(nums);class Solution {}return false;}static boolean bruteForceMethod(int[] nums){Arrays.sort(nums);
