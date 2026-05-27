@@ -1,0 +1,1 @@
+import java.util.Arrays;public boolean isAnagram(String s, String t) {String[] strArr1 = s.split("");String[] strArr2 = t.split("");Arrays.sort(strArr1);Arrays.sort(strArr2);return Arrays.equals(strArr1,strArr2);}class Solution {}
