@@ -1,1 +1,1 @@
-if(nums[i] == 2){// swap it with highint temp = nums[i];nums[i] = nums[high];nums[high] = temp;i--;high--;}else if(nums[i] == 0){int temp = nums[i];nums[i] = nums[low];nums[low] = temp;low++;}i++;}while(i <= high){int i = 0; // current index}
+low++;mid++;}else if(nums[mid] == 1){mid++;}else if(nums[mid] == 2){int temp = nums[mid];nums[mid] = nums[high];nums[high] = temp;high--;}}}static public void sortColors(int[] nums) {dutchAlgo(nums);}}
