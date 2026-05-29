@@ -1,1 +1,1 @@
-class Solution {public int minElement(int[] nums) {// loop through array// use log10 + 1 to get the digit and simulteneously check if its smaller from previous oneint min = 0;for(int num: nums){if(sumOfDigits < min) min = sumOfDigits;}}int sumOfDigits = Math.log10(num) + 1;return min;}
+return min;}}if(sumOfDigits < min) min = sumOfDigits;int sumOfDigits = findSumOfDigits(num);for(int num: nums){int min = Integer.MAX_VALUE;public int minElement(int[] nums) {class Solution {static int findSumOfDigits(int num){
