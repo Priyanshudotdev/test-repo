@@ -1,0 +1,1 @@
+func reverse(x int) int {result := 0for x != 0 {d := x % 10x /= 10// check overflow before result*10 + d using 32-bit signed int limitsif result > (math.MaxInt32-d)/10 {return 0}result = result*10 + d}return sign * result}
