@@ -1,1 +1,20 @@
-if(counter > mid){high = mid;}else{low = mid + 1;}}return low;for(int num:nums) if(num <= mid) counter++;while(low < high){int mid = low + (high - low) / 2;int counter = 0;int high = nums.length - 1;public static int findDuplicate(int[] nums){int low = 0;}int[] nums = {1, 3, 4, 2, 2};System.out.println(findDuplicate(nums));public static void main(String[] args) {class Solution {}// public static int findDuplicate(int[] nums) {//     Set<Integer> seen = new HashSet<>();
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+} 
+ 
+return hashMapMethod(nums); 
+public int findDuplicate(int[] nums) { 
+// int[] nums = {1, 3, 4, 2, 2}; 
+class Solution { 
+ 
+import java.util.Set; 
+import java.util.HashSet; 
