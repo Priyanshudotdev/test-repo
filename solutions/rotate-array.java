@@ -3,7 +3,7 @@ nums[start] = nums[end];
 nums[end] = temp; 
 start++; 
 end--; 
-while(start < end){ 
+while(start <= end){ 
 static void reverseArr(int[] nums, int start, int end){ 
 } 
  
