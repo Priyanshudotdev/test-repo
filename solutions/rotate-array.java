@@ -1,14 +1,20 @@
-class Solution { 
+int temp = nums[start]; 
+nums[start] = nums[end]; 
+nums[end] = temp; 
+start++; 
+end--; 
+while(start < end){ 
+static void reverseArr(int[] nums, int start, int end){ 
+} 
+ 
+reverseArr(nums, 0, k-1); 
+reverseArr(nums, k, nums.length - 1); 
+reverseArr(nums, 0, nums.length - 1); 
+// now reverse 0 - k and k + 1 to n(length of arr) 
+// reverse the entire arr 
+static void optimalMethod(int[] nums, int k){ 
+ 
+optimalMethod(nums,k); 
+} 
 public void rotate(int[] nums, int k) { 
-while(k > 0){ 
-int temp = nums[nums.length-1]; 
-int i = nums.length - 1; 
-while(i-1 >= 0){ 
-nums[i] = nums[i-1]; 
-i--; 
-} 
-nums[0] = temp; 
-k--; 
-} 
-} 
-} 
+class Solution { 
