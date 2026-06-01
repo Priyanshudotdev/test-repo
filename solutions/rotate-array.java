@@ -1,8 +1,6 @@
 int temp = nums[start]; 
 nums[start] = nums[end]; 
 nums[end] = temp; 
-start++; 
-end--; 
 while(start <= end){ 
 static void reverseArr(int[] nums, int start, int end){ 
 } 
@@ -18,3 +16,5 @@ optimalMethod(nums,k);
 } 
 public void rotate(int[] nums, int k) { 
 class Solution { 
+if(end > nums.length - 1) return; 
+ 
