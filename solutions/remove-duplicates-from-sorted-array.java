@@ -1,1 +1,0 @@
-int left = 1;int right = 1;*/while(right < nums.length){if(nums[right] != nums[right-1]){that}else{nums[left] = nums[right];right++;left++;right++;}}return left;}}
