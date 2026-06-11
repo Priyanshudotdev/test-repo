@@ -1,1 +1,0 @@
-class Solution {static void bruteForce(int[] nums) {for (int i = 0; i < nums.length; i++) {for (int j = 0; j < nums.length - 1; j++) {if (nums[j] > nums[j + 1]) {int temp = nums[j];nums[j] = nums[j + 1];nums[j + 1] = temp;}}}}static void betterApp(int[] nums) {int red = 0;int white = 0;int blue = 0;for (int i = 0; i < nums.length; i++) {if (nums[i] == 0) {
