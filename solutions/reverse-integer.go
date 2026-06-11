@@ -1,1 +1,0 @@
-package mainimport "math"func reverse(x int) int {sign := 1if x < 0 {sign = -1x = -x}result := 0for x != 0 {d := x % 10x /= 10// check overflow before result*10 + d using 32-bit signed int limitsif result > (math.MaxInt32-d)/10 {return 0}

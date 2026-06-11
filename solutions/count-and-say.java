@@ -1,1 +1,0 @@
-// hi therer/**dfdsfdfsfd */class Solution {public String countAndSay(int n) {if (n <= 0) return "";String s = "1";for (int i = 2; i <= n; i++) {s = next(s);}return s;}private String next(String s) {StringBuilder sb = new StringBuilder();int count = 1;for (int i = 1; i < s.length(); i++) {

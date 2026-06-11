@@ -1,1 +1,0 @@
-// if its not the first rowif(i > 0){// just make that row to zero in first rowmatrix[i][0] = 0;}else{// indicating that first row is zerorowZero = true;}}}}// make them zerofor(int i = 1; i < rows; i++){for(int j = 1; j < cols; j++){if(matrix[0][j] == 0 || matrix[i][0] == 0){matrix[i][j] = 0;}}}

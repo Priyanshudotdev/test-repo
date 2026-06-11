@@ -1,1 +1,0 @@
-while(low < high){- if arr[mid] > arr[mid + 1]-      2      >    1*//*- one loop from start and one from end ??int low = 0;int high = arr.length - 1;}static int optimalMethod(int[] arr){class Solution {public int findPeakElement(int[] nums) {return optimalMethod(nums);

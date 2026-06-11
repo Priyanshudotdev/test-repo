@@ -1,1 +1,0 @@
-// you cannot add this into arraysum = num;peices++;}else{sum += num;}}if(peices <= m){end = mid;}else{start = mid + 1;}}return start;}}

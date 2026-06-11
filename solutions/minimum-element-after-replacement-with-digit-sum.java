@@ -1,1 +1,0 @@
-return min;}}if(sumOfDigits < min) min = sumOfDigits;int sumOfDigits = findSumOfDigits(num);for(int num: nums){int min = Integer.MAX_VALUE;public int minElement(int[] nums) {class Solution {static int findSumOfDigits(int num){
