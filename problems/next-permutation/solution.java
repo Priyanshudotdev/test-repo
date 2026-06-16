@@ -1,20 +1,18 @@
-        
-        // Step 3: Swap nums[i] and nums[j]
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
-        
-        // Step 4: Reverse the suffix starting at i+1
-        reverse(nums, i+1, n-1);
-    }
-    
-    static void reverse(int[] nums, int start, int end) {
-        while(start < end) {
-            int temp = nums[start];
-            nums[start] = nums[end];
-            nums[end] = temp;
-            start++;
-            end--;
+        if(breakPoint == 0){
+            reverseArr(nums, 0, nums.length - 1);
+            return;
         }
+        array and will the first permutation (the actual array) 
+        //step-2 : find the elem bigger than the break point elem from right
+        for(int j = nums.length - 1; j >= 0; j--){
+            if(nums[j] > nums[breakPoint]){
+                elemIndex = j;
+                break;
+            }
+        }
+        //step-3 : now replace the elements
+        swapElem(nums,breakPoint, elemIndex);
+        //step-4 : now reverse the right subarray from breakPoint + 1 to n-1
+        reverseArr(nums,breakPoint+1, nums.length - 1);    
     }
-public static void optimalMethod(int[] nums){
+    static void swapElem(int[] nums, int i, int j){
