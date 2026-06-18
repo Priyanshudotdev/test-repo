@@ -1,18 +1,21 @@
-        while(i < j){
-            if(i == target) break;
-            if(j == target) break;
-            i++;
-            j--;
+        return result;
         }
-        
-        if(nums[i] != target || nums[nums.length - j] != target){
-            return new int[]{-1,-1};
-        }
-        return new int[]{i,(nums.length - j )};
-        int j = nums.length - 1;
-        int i = 0;
-        }
-        if(nums.length == 0){
-            return new int[]{-1,-1};
-    static int[] searchRange(int[] nums, int target){
+            }
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }else if (nums[mid] > target) {
+                }
+                    low = mid + 1;
+                } else {
+                if (findFirstIndex) {
+                    high = mid - 1;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            if (nums[mid] == target) {
+                result = mid;
+        int high = nums.length - 1;
+        int result = -1;
+        int low = 0;
+    static int bSearch(int[] nums, int target, boolean findFirstIndex) {
     }
