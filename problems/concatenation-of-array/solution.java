@@ -1,17 +1,17 @@
-class Solution {
-    public int[] getConcatenation(int[] nums) {
+    }
+        return optimalMethod(nums,result);
         int n = nums.length;
+    public int[] getConcatenation(int[] nums) {
+class Solution {
+    static int[] optimalMethod(int[] nums, int[] result){
+            for(int num: nums){
+        }
+        int idx = 0;
+        for(int i = 0; i < 2; i++){
         int[] result = new int[2 * n];
-        int i = 0;
-        while (i < n) {
-            result[i] = nums[i];
-        boolean flag = false;
-        }
-            i++;
-        int j = 0;
-        while (j < n) {
-            i++;
-            result[i] = nums[j];
-            j++;
-        }
         return result;
+    }
+    static int[] bruteForce(int[] nums, int[] result){
+                result[idx++] = num;
+            }
+        int n = nums.length;
