@@ -1,18 +1,19 @@
-            return false;
-        }
-        return bSearch(nums, target, i + 1, nums.length - 1);
-    }
-    public static boolean bSearch(int[] nums, int target, int low, int high) {
-        if (low > high || nums == null || nums.length == 0) {
-        if (bSearch(nums, target, 0, i)) {
-            return true;
-        }
-        if (high - 1 >= 0 && nums[low] == nums[high - 1]) {
-            low = high;
-        }
-        while (low <= high) {
+                    if (target < nums[mid]) {
+                        high = mid - 1;
+                if (nums[low] <= target && target < nums[mid]) {
+            // left porttion
+            if (nums[low] < nums[mid]) {
+            }
             int mid = low + (high - low) / 2;
             if (nums[mid] == target) {
                 return true;
-            }
-            if (nums[low] == nums[mid]) {
+        while (low <= high) {
+        }
+        if (low > high || nums == null || nums.length == 0) {
+            return false;
+    public static boolean bSearch(int[] nums, int target, int low, int high) {
+        return bSearch(nums, target, 0, nums.length - 1);
+    }
+    public static boolean search(int[] nums, int target) {
+class Solution {
+                    }
