@@ -8,9 +8,10 @@
     }
             if(nums[mid] == target) return true;
             if(nums[mid] > target) high = mid - 1;
-            else low = mid + 1;
+        if(bSearch(nums,target,0,i)){
         }
-    }
-        return false;
-        
-}
+        while(i+1 < nums.length && nums[i] < nums[i+1]){
+            i++;
+    public boolean search(int[] nums, int target) {
+        int i = 0; // breaking point
+class Solution {
