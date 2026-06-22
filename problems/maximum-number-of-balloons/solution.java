@@ -1,16 +1,15 @@
-        return anotherBroteFoce(text);
+        // return anotherBroteFoce(text);
     public static int maxNumberOfBalloons(String text) {
-class Solution {
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+        int[] f = new int[5];
+        String t = "balon";
+        for (int i = 0; i < s.length(); i++)
+            for (int j = 0; j < 5; j++)
+                if (s.charAt(i) == t.charAt(j))
+                    f[j]++;
+        f[2] >>= 1;
+        f[3] >>= 1;
+        return Arrays.stream(f).min().getAsInt();
     }
-    public static int anotherBroteFoce(String text) {
-        char[] charArr = text.toCharArray();
-        int[] balloonArr = {0, 0, 0, 0, 0};
-        for (int i = 0; i < charArr.length; i++) {
-            switch (charArr[i]) {
-                case 'b':
-                    balloonArr[0]++;
-                    break;
+class Solution {
+import java.util.Map;
+import java.util.List;
