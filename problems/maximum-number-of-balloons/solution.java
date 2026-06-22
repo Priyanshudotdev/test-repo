@@ -1,7 +1,7 @@
         while (true) {
             for (int i = 0; i < balloonArr.length; i++) {
                 if (balloonArr[i] == 0) {
-                    return 0;
+                    return balloonCount;
                 }
                 int newValue = balloonArr[i];
                 if (i == 2 || i == 3) {
@@ -15,4 +15,4 @@
                 balloonArr[i] = newValue;
             }
             balloonCount++;
-        }
+        int balloonCount = 0;
