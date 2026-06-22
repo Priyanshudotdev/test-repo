@@ -1,18 +1,15 @@
-                }
-                if (newValue < 0) {
-                    return ballonCount;
-                }
-                map.put(s.getKey(), newValue);
-            }
-            ballonCount++;
-        }
-    }
-    public static boolean findInArray(List<Character> charArr, char ch) {
-        for (int i = 0; i < charArr.size(); i++) {
-            if (charArr.get(i) == ch) {
-                return true;
+                int result = map.getOrDefault(c, 0);
+                map.put(c, result + 1);
             }
         }
-        return false;
-    }
-}
+        // char[] balloonArr = {'b', 'a', 'l', 'l', 'o', 'o', 'n'};
+        ArrayList<Character> charArr = new ArrayList<>(List.of('b', 'a', 'l', 'o', 'n'));
+        int ballonCount = 0;
+        for (char c : text.toCharArray()) {
+            if (findInArray(charArr, c)) {
+        Map<Character, Integer> map = new HashMap<>();
+class Solution {
+    public static int maxNumberOfBalloons(String text) {
+        if (map.size() != 5) {
+            return ballonCount;
+        }
