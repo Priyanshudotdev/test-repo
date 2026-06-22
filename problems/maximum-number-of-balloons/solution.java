@@ -1,18 +1,18 @@
-                case 'n':
-                    balloonArr[4]++;
-                    balloonArr[3]++;
-                case 'l':
-                    balloonArr[2]++;
-                case 'o':
-                case 'a':
-                    balloonArr[1]++;
-                    balloonArr[0]++;
-                case 'b':
-            switch (charArr[i]) {
-        for (int i = 0; i < charArr.length; i++) {
-        char[] charArr = text.toCharArray();
-        int[] balloonArr = {0, 0, 0, 0, 0};
-    public static int anotherBroteFoce(String text) {
-    }
-        return anotherBroteFoce(text);
-                    break;
+        while (true) {
+            for (int i = 0; i < balloonArr.length; i++) {
+                if (balloonArr[i] == 0) {
+                    return 0;
+                }
+                int newValue = balloonArr[i];
+                if (i == 2 || i == 3) {
+                    newValue -= 2;
+                } else {
+                    newValue -= 1;
+                }
+                if (newValue < 0) {
+                    return balloonCount;
+                }
+                balloonArr[i] = newValue;
+            }
+            balloonCount++;
+        }
