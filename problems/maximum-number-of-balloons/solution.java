@@ -1,15 +1,16 @@
-                    map.put(c, map.getOrDefault(c, 0) + 1);
-                }
-            }
-            if (map.size() != 5) return 0;
-                if (needed.contains(c)) {
-            for (char c : text.toCharArray()) {
-            Set<Character> needed = Set.of('b', 'a', 'l', 'o', 'n');
-            Map<Character, Integer> map = new HashMap<>();
-        // return anotherBroteFoce(text);
+        return anotherBroteFoce(text);
     public static int maxNumberOfBalloons(String text) {
 class Solution {
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+    }
+    public static int anotherBroteFoce(String text) {
+        char[] charArr = text.toCharArray();
+        int[] balloonArr = {0, 0, 0, 0, 0};
+        for (int i = 0; i < charArr.length; i++) {
+            switch (charArr[i]) {
+                case 'b':
+                    balloonArr[0]++;
+                    break;
