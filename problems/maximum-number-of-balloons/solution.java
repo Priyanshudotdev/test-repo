@@ -7,9 +7,10 @@ class Solution {
         return anotherBroteFoce(text);
     }
     public static int anotherBroteFoce(String text) {
-    }
-    public static int broteForce(String text){
-        Map<Character, Integer> map = new HashMap<>();
-        // char[] balloonArr = {'b', 'a', 'l', 'l', 'o', 'o', 'n'};
-        ArrayList<Character> charArr = new ArrayList<>(List.of('b', 'a', 'l', 'o', 'n'));
-        int ballonCount = 0;
+        char[] charArr = text.toCharArray();
+        int[] balloonArr = {0, 0, 0, 0, 0};
+        for (int i = 0; i < charArr.length; i++) {
+            switch (charArr[i]) {
+                case 'b':
+                    balloonArr[0]++;
+                case 'a':
