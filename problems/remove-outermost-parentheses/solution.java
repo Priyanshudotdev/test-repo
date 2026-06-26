@@ -1,12 +1,14 @@
-     */
-    public String removeOuterParentheses(String s) {
-        int counter = 0;
-        - if the counter is not equals to zero then push to result
         StringBuilder result = new StringBuilder();
+        int depth = 0;
+    public static String optimalMethod(String s){
         for(int i = 0; i < s.length(); i++){
-            if(s.charAt(i) == ')'){
-                counter--;
+            char currentChar = s.charAt(i);
+            if(currentChar == '('){
+                if(depth > 0) result.append(currentChar);
+                depth++;
             }
-            if(counter != 0) result.append(s.charAt(i));
-            if(s.charAt(i) == '('){
-                counter++;
+            if(currentChar == ')'){
+                if(depth > 0) result.append(currentChar);
+                depth--;
+            }
+        }
