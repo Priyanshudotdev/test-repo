@@ -9,7 +9,7 @@
         }
             return false;
         if (shift == -1) {
-        int shift = reveredString.indexOf(goal.charAt(0));
+        int shift = reveredString.lastIndexOf(goal.charAt(0));
         // find the index where it matches with the first char of goal
         String reveredString = new StringBuilder(s).reverse().toString();
         // reverse string
