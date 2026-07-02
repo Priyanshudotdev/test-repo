@@ -6,15 +6,17 @@
         if (goal.equals(result)) {
             return true;
         }
-        return false;
-    }
-    static void reverseCharArr(char[] arr, int start, int end) {
-        while (start < end) {
-            char temp = arr[end];
-            arr[end] = arr[start];
-            arr[start] = temp;
-            start++;
-            end--;
         }
-    }
-}
+            return false;
+        if (shift == -1) {
+        int shift = reveredString.indexOf(goal.charAt(0));
+        // find the index where it matches with the first char of goal
+        String reveredString = new StringBuilder(s).reverse().toString();
+        // reverse string
+    public static boolean rotateString(String s, String goal) {
+    // }
+    //     System.out.println(rotateString(s, goal));
+    //     String s = "abcde", goal = "abced";
+    // public static void main(String[] args) {
+        
+        if(s.equals(goal)) return true;
