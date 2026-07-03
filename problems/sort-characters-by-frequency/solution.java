@@ -1,15 +1,15 @@
             map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1);
         }
-        StringBuilder result = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
         Map<Character, Integer> map = new HashMap<>();
+        StringBuilder result = new StringBuilder();
     public static String frequencySort(String s) {
-    //     System.out.println(frequencySort(s));
     // }
-    // public static void main(String[] args) {
+    //     System.out.println(frequencySort(s));
     //     String s = "abaccadeeefaafcc";
+    // public static void main(String[] args) {
 class Solution {
-import java.util.Map;
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.ArrayList;
+import java.util.HashMap;
