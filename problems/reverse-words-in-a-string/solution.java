@@ -1,16 +1,16 @@
-import java.util.Arrays;
-class Solution {
-    public static String reverseWords(String s) {
-        String[] strArr = s.trim().split("\\s+");
-        // System.out.println(Arrays.toString(strArr));
-        reverse(strArr);
-        String result = String.join(" ", strArr);
-        return result;
+        // return result;
+    }
+    public static String optimalMethod(String s){
+        String[] str = s.trim().split("\\s+");
+        String result = "";
+        for(int i = str.length - 1; i >= 0; i--){
+            result+= str[i] + " ";
+        }
+        // String result = String.join(" ", strArr);
+        // reverse(strArr);
+        return result.trim();
     }
     public static void reverse(String[] strArr) {
         int start = 0;
         int end = strArr.length - 1;
         while (start < end) {
-            String temp = strArr[start];
-            strArr[start] = strArr[end];
-            strArr[end] = temp;
