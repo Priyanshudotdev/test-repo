@@ -1,15 +1,16 @@
-            map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1);
+    // sort the list
+    list.sort((a, b) -> b.getValue() - a.getValue());
+    // append all char into string
+    for (Map.Entry<Character, Integer> m : list) {
+        for (int i = 0; i < m.getValue(); i++) {
+            result += m.getKey();
         }
-        for (int i = 0; i < s.length(); i++) {
-        Map<Character, Integer> map = new HashMap<>();
+    }
+    return result;
+}
+public static String frequencySort(String s) {
+    return reSolve(s);
+}
+    public static String optimalMethod(String s){
+                Map<Character, Integer> map = new HashMap<>();
         StringBuilder result = new StringBuilder();
-    public static String frequencySort(String s) {
-    // }
-    //     System.out.println(frequencySort(s));
-    //     String s = "abaccadeeefaafcc";
-    // public static void main(String[] args) {
-class Solution {
-import java.util.List;
-import java.util.Map;
-import java.util.ArrayList;
-import java.util.HashMap;
