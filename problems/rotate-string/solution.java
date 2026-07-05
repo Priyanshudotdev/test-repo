@@ -6,8 +6,8 @@
         }
             return true;
         if ((s + s).contains(goal)) {
-        false;
+        return false;
     public static boolean resolve(String s, String goal){
-        if(s == null || goal == null || s.length() != goal.length() return 
+        if(s == null || goal == null || s.length() != goal.length()) 
     // re-solve
 class Solution {
