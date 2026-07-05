@@ -1,4 +1,4 @@
-    return "";
+    return ref;
     }
         }
             }
@@ -10,7 +10,8 @@
     int index = Integer.MAX_VALUE;
     // re-solve
     public static String reSolve(String[] strs) {
-        return reSolve(strs);
     }
-    public String longestCommonPrefix(String[] strs) {
-class Solution {
+    public static String optimalMethod(String[] strs){
+        
+    }
+        return reSolve(strs);
