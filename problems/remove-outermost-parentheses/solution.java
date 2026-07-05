@@ -7,12 +7,12 @@
             if (s.charAt(i) == ')') {
                 counter--;
             }
-            if (counter != 0) {
-                result.append(s.charAt(i));
-            }
-            if (s.charAt(i) == '(') {
-                counter++;
-            }
-        }
-        return result.toString();
-    }
+        return optimalMethod(s);
+    public String removeOuterParentheses(String s) {
+        - if the counter is not equals to zero then push to result
+     */
+        - loop to whole string and increament counter if its opening paranthesis "(" 
+        and dereament if closing ")"
+    /**
+        - will take a counter var and a result string
+class Solution {
