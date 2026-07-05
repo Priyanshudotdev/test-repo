@@ -1,17 +1,14 @@
-        }
-            arr[t.charAt(i) - 'a']--;
-            arr[s.charAt(i) - 'a']++;
-        for (int i = 0; i < s.length(); i++) {
-        int[] arr = new int[50];
-        }
-            return false;
-        if (s.length() != t.length()) {
-        }
-            return false;
-        if (s == null || t == null) {
-    static boolean reSolveOptimal(String s , String t){
     }
-    public boolean isAnagram(String s, String t) {
-        return reSolveOptimal(s,t);
+    static boolean reReSolve(String s, String t){
+        if(s == null || t == null || s.length() != t.length()){
+            return false;
+        }
+        for(int i = 0; i < s.length(); i++){
+        int[] map = new int[50];
+            map[s.charAt(i) - 'a']++;
+        }
+            map[t.charAt(i) - 'a']--;
+        return reReSolve(s,t);
 class Solution {
+    public boolean isAnagram(String s, String t) {
 import java.util.Arrays;
