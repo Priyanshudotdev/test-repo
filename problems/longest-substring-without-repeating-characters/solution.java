@@ -8,9 +8,9 @@
                 }
                 map.put(s.charAt(j), 1);
         if (s == null || s.length() == 0) {
-            return 1;
-        }
     public static int lengthOfLongestSubstring(String s) {
 class Solution {
 import java.util.Map;
 import java.util.HashMap;
+            return 0;
+        }
