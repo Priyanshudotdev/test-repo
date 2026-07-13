@@ -10,8 +10,9 @@
                 System.out.println(s.substring(i,j));
                 if(palindrome(s.substring(i,j + 1))){
         return count;
-    }
-    public static boolean palindrome(String s1){
-        return s1.equals(new StringBuilder(s1).reverse().toString());
-    }
-}
+    
+    // }
+    //     System.out.println(countSubstrings(s));
+    //     String s = "aaa";
+    // public static void main(String[] args){
+class Solution {
