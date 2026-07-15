@@ -1,17 +1,19 @@
-            map.clear();
-            result += count;
-            }
-                    count += sub;
-                }
-                int sub = getFreqSub(map);
-                if(sub > 0){
-                map.put(s.charAt(j), map.getOrDefault(s.charAt(j), 0) + 1);
-            int count = 0;
+                for(int k = 0; k < freq.length; k++){
+                int max = Integer.MIN_VALUE;
+                int min = Integer.MAX_VALUE;
+                    if(freq[k] > 0){
+                freq[ch - 'a']++;
+                char ch = s.charAt(j);
+            int[] freq = new int[27];
             for(int j = i; j < s.length(); j++){
         for(int i = 0; i < s.length(); i++){
-         Map<Character, Integer> map = new HashMap<>();
-         int result = 0;
-     public static int beautySum(String s) {
-class Solution {
-import java.util.Map;
-import java.util.HashMap;
+        int result = 0;
+    public static int optimalMethod(String s){
+        return optimalMethod(s);
+    }
+                        min = Math.min(freq[k], min);
+                        max = Math.max(freq[k], max);
+                    }
+                }
+                result += max - min;
+            }
