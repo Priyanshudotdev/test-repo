@@ -1,16 +1,13 @@
+        int i = s.length() - 1;
+    public static String moreOptimalMethod(String s){
+        StringBuilder result = new StringBuilder();
         // return result;
     }
-    public static String optimalMethod(String s){
-        String[] str = s.trim().split("\\s+");
-        String result = "";
-        for(int i = str.length - 1; i >= 0; i--){
-            result+= str[i] + " ";
-        }
         // String result = String.join(" ", strArr);
+        // // System.out.println(Arrays.toString(strArr));
         // reverse(strArr);
-        return result.trim();
-    }
-    public static void reverse(String[] strArr) {
-        int start = 0;
-        int end = strArr.length - 1;
-        while (start < end) {
+        // String[] strArr = s.trim().split("\\s+");
+        return moreOptimalMethod(s);
+    public static String reverseWords(String s) {
+class Solution {
+import java.util.Arrays;
