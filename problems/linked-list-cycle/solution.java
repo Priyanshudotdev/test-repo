@@ -1,8 +1,8 @@
-    public boolean bruteForceMethod(ListNode head){
-        ListNode temp = head;
-        HashMap<ListNode, Integer> nodeMap = new HashMap<>();
+        - slow will move 1 step
+    /**
+        - will take two pointer slow and fast
     }
-        return bruteForceMethod(head);
+        return optimalMethod(head);
     public boolean hasCycle(ListNode head) {
 public class Solution {
  */
