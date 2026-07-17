@@ -7,12 +7,13 @@
     public boolean palindromOptimal(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
+    }
+        return palindromOptimal(head);
+    public boolean isPalindrome(ListNode head) {
+class Solution {
+ */
+ * }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
         // get the middle
-        while (fast != null && fast.next != null && fast.next.next != null) {
+        while (fast.next != null && fast.next.next != null) {
             fast = fast.next.next;
-            slow = slow.next;
-        }
-        // slow will be at middle and fast will be at the last - 1
-        ListNode newHead = reverseLL(slow.next);
-        ListNode temp = head;
-        while (newHead != null) {
