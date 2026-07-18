@@ -1,16 +1,18 @@
-        return reversed;
+        int num1 = reverseLL(l1);
+        int num2 = reverseLL(l2);
+    public ListNode bruteForceMethod(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        return bruteForceMethod(l1,l2);
     }
-    public List<Integer> getDigitsOfNum(int num) {
-        List<Integer> list = new ArrayList<>();
-        while (num >= 0) {
-            int digit = num % 10;
-            list.add(digit);
-            num /= 10;
+class Solution {
+ * }
+ */
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode() {}
+ *     ListNode next;
+        if (num1 > num2) {
+            return addTwoNum(num1 + num2);
+        } else {
+            return addTwoNum(num1 + num2);
         }
-        return list;
-             if (num == 0) {
-                list.add(0);
-                return list;
-            }
-    }
-}
