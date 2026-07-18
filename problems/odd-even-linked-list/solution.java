@@ -7,9 +7,10 @@
             oddTail = oddTail.next;
             evenTail.next = oddTail.next;
             evenTail = evenTail.next;
-        }
-        oddTail.next = evenHead;
         ListNode oddTail = oddHead;
         ListNode oddHead = head;
     public ListNode optimalMethod(ListNode head) {
     }
+        return optimalMethod(head);
+    public ListNode oddEvenList(ListNode head) {
+        if(head == null) return null;
