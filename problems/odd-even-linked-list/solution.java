@@ -1,18 +1,15 @@
+        ListNode evenHead = head.next;
+        ListNode evenTail = evenHead;
+        // 1st node would be odd
+        // 2ns would be even so first will add the 1st elem and move the pointer
+        while (evenTail != null && evenTail.next != null) {
+            oddTail.next = evenTail.next;
+            oddTail = oddTail.next;
+            evenTail.next = oddTail.next;
+            evenTail = evenTail.next;
+        }
+        oddTail.next = evenHead;
+        ListNode oddTail = oddHead;
+        ListNode oddHead = head;
+    public ListNode optimalMethod(ListNode head) {
     }
-  public static ListNode bruteForceMethod(ListNode head) {
-        ListNode newHead = null;
-        ListNode tail = null;
-        int i = 1;
-        ListNode temp = head;
-        while (temp != null) {
-            if (i % 2 != 0) {
-                ListNode newNode = new ListNode(temp.val);
-                if (newHead == null) {
-                    newHead = newNode;
-                    tail = newNode;
-                } else {
-                    tail.next = newNode;
-                    tail = newNode;
-                }
-            }
-            i++;
