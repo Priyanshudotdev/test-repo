@@ -1,17 +1,18 @@
-        List<Integer> list = new ArrayList<>();
-        if(head == null) return null;
-    public static ListNode sortLL(ListNode head) {
+        // check if its null or only contain one node
+    public ListNode OptimalMethod(ListNode head) {
+    */
+        - merge those two nodes and return
+        - here we have used merge
+        - first split the list into half
+        - call a recursive fn for those two split Node
+     - Simpler and most optimal way to do is that apply merge or any other nlogn time complexity sorting algo
+       /**
     }
-    public ListNode sortList(ListNode head) {
-        return sortLL(head);
+        return OptimalMethod(head);
 class Solution {
+    public ListNode sortList(ListNode head) {
+ */
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
- */
  *     ListNode(int val) { this.val = val; }
  *     ListNode() {}
- *     ListNode next;
- *     int val;
- * public class ListNode {
- * Definition for singly-linked list.
-/**
