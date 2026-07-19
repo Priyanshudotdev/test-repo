@@ -1,3 +1,4 @@
+    public List<Integer> getDigitsOfNum(int num) {
         List<Integer> list = new ArrayList<>();
         if (num == 0) {
             list.add(0);
@@ -11,7 +12,3 @@
         return list;
     }
 }
-    public List<Integer> getDigitsOfNum(int num) {
-    }
-        return reversed;
-        }
