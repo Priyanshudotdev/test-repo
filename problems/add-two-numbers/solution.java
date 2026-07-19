@@ -1,16 +1,18 @@
-        if (l1 == null && l2 == null) return null;
-    public static ListNode bruteForceMethod(ListNode l1, ListNode l2) {
+        long num = 0;
+        while (temp != null) {
+            num = num * 10 + temp.val;
+            ListNode next = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp = next;
+        }
+        return reverseNum(num);
     }
-        return bruteForceMethod(l1,l2);
- */
-class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
- * }
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * public class ListNode {
- *     int val;
- *     ListNode next;
- * Definition for singly-linked list.
-/**
+    public static long reverseNum(long num) {
+        long sign = num < 0 ? -1 : 1;
+        String reversedStr = new StringBuilder(String.valueOf(Math.abs(num)))
+            .reverse()
+            .toString();
+        return Long.parseLong(reversedStr) * sign;
+    }
+}
