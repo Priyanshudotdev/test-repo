@@ -1,17 +1,16 @@
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        ListNode left = dummy;
-        ListNode right = head;
+    public ListNode resolve(ListNode head, int n) {
+        ListNode dummy = new ListNode(0, head);
+        ListNode slow = dummy;
+        ListNode fast = dummy;
         for (int i = 0; i < n; i++) {
-            right = right.next;
+            fast = fast.next;
         }
-        while (right != null) {
-            left = left.next;
-            right = right.next;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next;
         }
-        left.next = left.next.next;
-        return dummy.next;
+        slow.next = slow.next.next;
     }
-    public static ListNode bruteForceMethod(ListNode head, int n) {
-        if (head == null) return null;
-        ListNode newHead = reverse(head);
+        return resolve(head, n);
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+class Solution {
