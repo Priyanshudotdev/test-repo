@@ -16,3 +16,4 @@ class Solution {
         }
         return head;
     }
+        if(head == null) return null;
