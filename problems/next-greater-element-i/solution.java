@@ -10,7 +10,7 @@
         return result;
                     if(nums[j] > num){
                 }
-                        return [j];
+                        return nums[j];
                     }
             }
         }
