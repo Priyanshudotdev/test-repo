@@ -1,16 +1,19 @@
-import java.util.Stack;
-class Solution {
-    public static String decodeString(String s) {
-        Stack<Character> st = new Stack<>();
-        String result = "";
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) != ']') {
-                st.push(s.charAt(i));
-            } else {
+                st.pop();
+                String num = "";
+                }
                 String subStr = "";
                 while (st.peek() != '[') {
                     subStr = st.pop() + subStr;
+                st.push(s.charAt(i));
+            } else {
+                        num = st.pop() + num;
                 }
-                st.pop();
-                int repeatCount = st.pop() - '0';
+                String newStr = subStr.repeat(repeatCount);
+                for (int j = 0; j < newStr.length(); j++) {
+                    st.push(newStr.charAt(j));
+                }
+            }
+            if (s.charAt(i) != ']') {
+        for (int i = 0; i < s.length(); i++) {
                 while (!st.isEmpty() && Character.isDigit(st.peek())) {
+                int repeatCount = Integer.parseInt(num);
