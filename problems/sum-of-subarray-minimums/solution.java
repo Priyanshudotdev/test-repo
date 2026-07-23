@@ -1,17 +1,17 @@
-class Solution {
-    public int sumSubarrayMins(int[] arr) {
-        int sum = 0;
-        for(int i = 0; i < arr.length; i++){
-            sum += arr[i];
-            for(int j = i + 1; j < arr.length; j++){
-                int min = getMin(Arrays.copyOfRange(arr,i, j+1));
-                sum += min;
+                st.push(st.pop() + min);
             }
         }
-        return sum;
+        return st.pop();
     }
-    public int getMin(int[] arr){
-        int min = arr[0];
+                int min = getMin(Arrays.copyOfRange(arr,i, j+1));
+            for(int j = i + 1; j < arr.length; j++){
+            if(st.isEmpty()){
         for(int i = 0; i < arr.length; i++){
-            min = Math.min(min, arr[i]);
-        }
+        int sum = 0;
+    public int sumSubarrayMins(int[] arr) {
+class Solution {
+        Stack<Integer> st = new Stack<>();
+                st.push(arr[i]);
+            }
+                st.push(st.pop() + arr[i]);
+            }else{
