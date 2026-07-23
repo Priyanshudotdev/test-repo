@@ -1,17 +1,17 @@
-        for (int i = 0; i < temp.length; i++) {
-            for (int j = i + 1; j < temp.length; j++) {
-                if (temp[j] > temp[i]) {
-                    res[k] = j - i;
-                    break;
-                }
             }
-            k++;
+            st.push(new int[] { temp[i], i });
         }
-        Arrays.fill(res, 0);
-        int[] res = new int[temp.length];
-        int k = 0;
-    public static int[] bruteForceMethod(int[] temp) {
+                int[] res = st.pop();
+                int index = res[1];
+                result[index] = i - index;
+            while (!st.isEmpty() && temp[i] > st.peek()[0]) {
+        for (int i = 0; i < temp.length; i++) {
+        // num -> index
+        Stack<int[]> st = new Stack<>();
+        int[] result = new int[temp.length];
+        Arrays.fill(result, 0);
+    public static int[] optimalMethod(int[] temp) {
     }
-        return bruteForceMethod(temperatures);
+        return optimalMethod(temperatures);
     public static int[] dailyTemperatures(int[] temperatures) {
 class Solution {
