@@ -1,17 +1,17 @@
-    public int[] bruteForceMethod(int[] temp){
-        int k = 0;
-        int[] res = new int[temp.length];
-        for(int i = 0; i < temp.length; i++){
-            for(int j = i + 1; j < temp.length; j++){
-        }
-                if(temp[j] > temp[i]){
-            }
+        for (int i = 0; i < temp.length; i++) {
+            for (int j = i + 1; j < temp.length; j++) {
+                if (temp[j] > temp[i]) {
                     res[k] = j - i;
-                }
-                    k++;
                     break;
+                }
+            }
+            k++;
+        }
         Arrays.fill(res, 0);
+        int[] res = new int[temp.length];
+        int k = 0;
+    public static int[] bruteForceMethod(int[] temp) {
     }
         return bruteForceMethod(temperatures);
-    public int[] dailyTemperatures(int[] temperatures) {
+    public static int[] dailyTemperatures(int[] temperatures) {
 class Solution {
