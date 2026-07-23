@@ -1,5 +1,3 @@
-        return bruteForceMethod(s, t);
-    }
     public boolean bruteForceMethod(String s, String t){
         String result = formatString(s);
         return result.equals(formatString(t));
@@ -12,6 +10,7 @@
             }else if(s.charAt(i) != '#'){
                 st.push(s.charAt(i));
             }
-        }
-        return st.toString();
     }
+        return bruteForceMethod(s, t);
+    public boolean backspaceCompare(String s, String t) {
+class Solution {
