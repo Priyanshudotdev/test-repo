@@ -1,21 +1,23 @@
-class Solution {
-    public int[] rearrangeArray(int[] nums) {
-        int[] result = new int[nums.length];
-        
-        int i = 0;
-        int j = 1;
-        
-        for(int k = 0; k < nums.length; k++){
-            if(nums[k] > 0) {
-                result[i] = nums[k];
-                i += 2;
-            }else{
-                result[j] = nums[k];
-                j += 2;
+            i++;
+            result[k] = nums[j];
+            k++;
+            result[k] = nums[i];
+            k++;
             }
+            }
+            while(j < nums.length && nums[j] > 0){
+                j++;
+            while(i < nums.length && nums[i] < 0){
+                i++;
+        int k = 0;
+        while(k < nums.length){
+        int[] result = new int[nums.length];
+            j++;
         }
-        
-        return result;
-        // List<Integer> list = new ArrayList<>();
-        // int lastNum = 0;
-        // int i = 0;
+        int j = 0;
+        int i = 0;
+    public int[] reSolve(int[] nums){
+    }
+    public int[] rearrangeArray(int[] nums) {
+        return reSolve(nums);
+class Solution {
