@@ -13,7 +13,7 @@
             int r = total % k;
             if(map.get(r) == null){
                 map.put(r, i);
-            }else if(map.get(r) != null && i - map.get(r) > 1){
+            }else if(map.get(r) != null && i -  map.get(r) > 1){
                 return true;
             }
         }
