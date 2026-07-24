@@ -15,9 +15,8 @@
                 - 23 % 6 => 5 : map({5,0})
         - init a remainder hashmap and a total var (where will store the prefix sum)
         - before that we need to understand the logic behind it
-    }
-    /**
         Optimal Approach
-        return optimalMethod(nums,k);
-    public boolean checkSubarraySum(int[] nums, int k) {
-class Solution {
+            because current index will be always bigger
+            example : [24,......] => here will get {0,0} in map and will just return it 
+            true but will add { {0,-1}, {0, 0} } so will just get "1" as an output so 
+            will not return true
