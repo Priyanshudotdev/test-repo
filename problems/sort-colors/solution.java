@@ -1,18 +1,22 @@
-class Solution {
-    public void sortColors(int[] nums) {
-        replaceMethod(nums);
-    }
-    /* -------------- Replace Method ------------- */
-    public static void resolveMethod(int[] nums){
-        int l = 0;
-        int i = 0;
-        int r = nums.length - 1;
-        while(i <= r){
-            if(nums[i] == 2){
-                swap(nums,i,r);
-                r--; 
-                i--;
-            }else if(nums[i] == 0){
-                swap(nums,i,l);
-                l++;                
+                int temp = nums[m];
+                nums[m] = nums[i];
+                nums[i] = temp;
+                i++;
             }
+            m++;
+            }else if(nums[m] == 0){
+                j--;
+                m--;
+                nums[m] = nums[j];
+                nums[j] = temp;
+                int temp = nums[m];
+            if(nums[m] == 2){
+        int m = 0;
+        while(m <= j){
+    public void resolve(int[] nums){
+        int i = 0;
+        int j = nums.length - 1;
+    }
+        replaceMethod(nums);
+    public void sortColors(int[] nums) {
+class Solution {
