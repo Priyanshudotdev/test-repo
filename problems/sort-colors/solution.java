@@ -17,6 +17,6 @@
         int i = 0;
         int j = nums.length - 1;
     }
-        replaceMethod(nums);
+        resolve(nums);
     public void sortColors(int[] nums) {
 class Solution {
