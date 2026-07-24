@@ -1,23 +1,21 @@
-            i++;
-            result[k] = nums[j];
-            k++;
-            result[k] = nums[i];
-            k++;
-            }
+class Solution {
+    public int[] rearrangeArray(int[] nums) {
+        return reSolve(nums);
+    }
+    public int[] reSolve(int[] nums){
+        int i = 0;
+        int j = 0;
+        int[] result = new int[nums.length];
+            while(i < nums.length && nums[i] < 0){
+                i++;
             }
             while(j < nums.length && nums[j] > 0){
                 j++;
-            while(i < nums.length && nums[i] < 0){
-                i++;
-        int k = 0;
-        while(k < nums.length){
-        int[] result = new int[nums.length];
-            j++;
+            }
+            result[k] = nums[i++];
+            result[k + 1] = nums[j++];
         }
-        int j = 0;
-        int i = 0;
-    public int[] reSolve(int[] nums){
+        
+        return result;
+        for(int k = 0; k < nums.length; k += 2 ){
     }
-    public int[] rearrangeArray(int[] nums) {
-        return reSolve(nums);
-class Solution {
