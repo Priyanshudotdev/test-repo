@@ -12,7 +12,7 @@
             tempSum += nums[i];
             sum = Math.max(tempSum, sum);
             if(tempSum < 0){
-        int sum = 0;
+        int sum = nums[0];
         int tempSum = 0;
         for(int i = 0; i < nums.length; i++){
     public int reSolve(int[] nums){
