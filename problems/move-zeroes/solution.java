@@ -11,8 +11,8 @@
             }
             j++;
         }
-   }
     }
          reresolve(nums);
     public void moveZeroes(int[] nums) {
 class Solution {
+            i++;
