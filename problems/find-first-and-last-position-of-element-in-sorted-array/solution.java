@@ -1,21 +1,16 @@
-        return result;
-        }
-            }
-                low = mid + 1;
-            } else {
-                high = mid - 1;
-            }else if (nums[mid] > target) {
+            int mid = low + (high - low)/2;
+            
+            if(nums[mid] == target){
+                // check for left and right
+                if(nums[mid - 1] == target){
+                    return new int[]{mid - 1, mid};
                 }
-                    low = mid + 1;
-                } else {
-                if (findFirstIndex) {
-                    high = mid - 1;
-        while (low <= high) {
-            int mid = low + (high - low) / 2;
-            if (nums[mid] == target) {
-                result = mid;
-        int high = nums.length - 1;
-        int result = -1;
-        int low = 0;
-    static int bSearch(int[] nums, int target, boolean findFirstIndex) {
+                if(nums[mid + 1] == target){
+                    return new int[]{mid,mid+1};
+                }
+            }else if(nums[mid] > target) high = mid - 1;
+            else if(nums[mid] < target) low = mid + 1;
+        }
+        
+        return new int[]{-1,-1};
     }
