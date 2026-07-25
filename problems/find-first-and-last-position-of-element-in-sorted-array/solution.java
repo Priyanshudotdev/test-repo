@@ -1,19 +1,17 @@
             int mid = low + (high - low)/2;
-            
-            if(nums[mid] == target){
-                // check for left and right
-                if(nums[mid - 1] >= 0 && nums[mid - 1] == target){
-                    return new int[]{mid - 1, mid};
-                }
-                if(nums[mid + 1] < nums.length && nums[mid - 1] == target){
-                    return new int[]{mid,mid+1};
-                }
-            }else if(nums[mid] > target) high = mid - 1;
-            else if(nums[mid] < target) low = mid + 1;
         while(low <= high){
         
         int high = nums.length - 1;
         int low = 0;
         
         }
+            return new int[]{0,0};
+        }else if(nums.length == 1){
             return new int[]{-1,-1};
+        if(nums.length == 0){
+    static int[] reSove2(int[] nums, int target){
+    }
+        return reSove2(nums,target);
+    static int[] searchRange(int[] nums, int target){
+  
+class Solution {
