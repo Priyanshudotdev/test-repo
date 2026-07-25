@@ -1,14 +1,14 @@
-    static int bruteForceMethod(int[] nums){
-        for(int i = nums.length - 1; i-1 >= 0; i--){
-            // breaking point
-            if(nums[i] < nums[i - 1]){
-                return nums[i];
-            }
-        }
-        return nums[0];
+                - else move high to mid - 1
+                - if num of low is smaller than current num which means we need to move the low to mid + 1
+            - else will check the current num with num of low : 
+            respect to current num
+            - if current num is greater than right side num (that means its the last largest number) will return next num 
+            - if current num is greater than left side num (that means it is in sorted order) will move forward
+            - will just use b search for finding the breaking point 
+            - will check for current num with its left and right side nums
+    /**
+        - Optimal Approach
     }
-    }
-        return -1;
-        }
-            }
-                high = mid - 1;
+        return reSolve(nums);
+    public int findMin(int[] nums) {
+class Solution {
