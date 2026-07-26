@@ -1,4 +1,3 @@
-                } else {
 class Solution {
     public int minSpeedOnTime(int[] dist, double hour) {
         int low = Integer.MAX_VALUE;
@@ -15,3 +14,4 @@ class Solution {
                 double hr = dist[i] / (float) mid;
                 if (i != dist.length - 1) {
                     hrsNeeded += Math.ceil(hr > 0.0 ? hr : 1);
+                } else {
