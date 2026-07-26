@@ -3,7 +3,7 @@ class Solution {
         return reSolve(s);
     }
     public boolean reSolve(String s){
-        String str = s.replaceAll("[\\s,./:]+", "").trim().toLowerCase();
+        String str = s.replaceAll("[\\s,./@#:]+", "").trim().toLowerCase();
         return new StringBuilder(str).reverse().toString().equals(str);
     }
     public boolean optimal(String s){
