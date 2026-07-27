@@ -1,7 +1,3 @@
-        int r = nums.length - 1;
-        int leftSum = nums[l];
-        int rightSum = nums[r];
-        if(leftSum > rightSum) {
             leftSum = 0;
             r--;
         }else {
@@ -18,3 +14,4 @@
         if(leftSum == rightSum) return r;
     }
         return -1;
+}
