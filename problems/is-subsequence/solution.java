@@ -1,17 +1,17 @@
-class Solution {
-    public boolean isSubsequence(String s, String t){
-        int[] charArr = new int[26];
-        for(int i = 0; i < s.length(); i++){
-            charArr[s.charAt(i) - 'a']++;
-        }
-        for(int i = 0; i < t.length(); i++){
-            if(s.indexOf(t.charAt(i)) >= 0){
-                charArr[t.charAt(i) - 'a']--;
+        for(char ch: s.toCharArray()) list.add(ch);
+        int l = 0;
+        for(char ch: t.toCharArray()){
+            if(l < list.size() && s.indexOf(ch) >= 0 && ch == list.get(l)){
+                list.remove(l);
             }
         }
-        for(int num: charArr){
-            if(num != 0) return false;
+        
+        if(list.isEmpty()){
+            return true;
         }
-        return true;
-    }
-}
+        
+        List<Character> list = new ArrayList<>();
+if(s.length() > t.length()) return false;
+    public boolean isSubsequence(String s, String t){
+class Solution {
+        return false;
