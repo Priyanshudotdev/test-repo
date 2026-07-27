@@ -1,19 +1,18 @@
-            if((i - l + 1) > k){
        }
-                l++;
-            }
-            if((i - l + 1) == k){
-                int vowelsCount = getVowelsCount(s,l,i);
-            }
     }
     public int getVowelsCount(String s, int start, int end){
-        String set = "aeiou";
-                result = Math.max(vowelsCount, result);
        return result;
-        int count = 0;
-        for(int i = start; i <= end; i++){
-            if(set.indexOf(s.charAt(i)) >= 0){
-                count++;
             }
-        }
-        return count;
+                result = Math.max(vowelsCount, result);
+                int vowelsCount = s.substring(l,i+1).replaceAll("[^aeiou]","").length();
+            if((i - l + 1) == k){
+            }
+                l++;
+            if((i - l + 1) > k){
+       for(int i = 0; i < s.length(); i++){
+       int l = 0;
+       int result = Integer.MIN_VALUE; 
+       
+class Solution {
+    public int maxVowels(String s, int k) {
+        String set = "aeiou";
