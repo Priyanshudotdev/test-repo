@@ -1,21 +1,16 @@
-            leftSum = 0;
-            r--;
-        }else {
-            rightSum = 0;
-            l++;
-        }
-        // l += 1;
-        // r -= 1;
-        while(l < r){
-        }
-        
-        // if(l == r && leftSum != rightSum) return -1;
-        
-        if(leftSum >= rightSum) {
-        int rightSum = nums[r];
-        int leftSum = nums[l];
-        int r = nums.length - 1;
-        int l = 0;
-    public int bruteForceMethod(int[] nums){
-    }
+class Solution {
+    public int pivotIndex(int[] nums) {
         return bruteForceMethod(nums);
+    }
+    public int bruteForceMethod(int[] nums){
+        int toalSum = 0;
+    }
+        int leftSum = 0;
+        for(int num: nums) totalSum += num;
+        for(int i = 0; i < nums.length; i++){
+            int rightSum = totalSum - leftSum - nums[i];
+        }
+            int leftSum += nums[i];
+            if(leftSum == rightSum) return i;
+        return -1;
+}
