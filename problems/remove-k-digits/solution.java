@@ -1,18 +1,16 @@
-class Solution {
-    public static String removeKdigits(String num, int k) {
-        Stack<Integer> st = new Stack<>();
-        for(int i = 0; i < num.length(); i++){
-            while(!st.isEmpty() && st.peek() >= (num.charAt(i) - '0') && k > 0){
-                st.pop();
-            }
-        }
         
-            st.push((num.charAt(i) - '0'));
-                k--;
-        String result = "";
-        while(!st.isEmpty()){
-            result = st.pop() + result;
+        StringBuilder sb = new StringBuilder();
         }
-        return String.valueOf(Integer.parseInt(result));
+        while (!st.isEmpty()) {
+            sb.append(st.pop());
+        }
+        // remove leading zeros
+        int idx = 0;
+        while(idx < sb.length() && sb.charAt(idx) == '0'){
+            idx++;
+        }
+        String result = sb.substring(idx);
+        return result.isEmpty() ? "0" : result;
     }
+        sb.reverse();
 }
