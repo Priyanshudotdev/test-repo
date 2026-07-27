@@ -3,14 +3,14 @@ class Solution {
         return bruteForceMethod(nums);
     }
     public int bruteForceMethod(int[] nums){
-        int toalSum = 0;
+        int totalSum = 0;
     }
         int leftSum = 0;
         for(int num: nums) totalSum += num;
         for(int i = 0; i < nums.length; i++){
             int rightSum = totalSum - leftSum - nums[i];
         }
-            int leftSum += nums[i];
+            leftSum += nums[i];
             if(leftSum == rightSum) return i;
         return -1;
 }
