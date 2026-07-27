@@ -6,7 +6,7 @@
         }
             k--;
             st.pop();
-        if(!st.isEmpty() && k > 0){
+        while(!st.isEmpty() && k > 0){
         }
             st.push((num.charAt(i) - '0'));
             }
