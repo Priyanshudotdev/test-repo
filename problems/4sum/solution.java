@@ -5,13 +5,15 @@
                         low++;
                     if(sum < target){
                     int sum = nums[i] + nums[j] + nums[low] + nums[high];
-                int high = nums.length - 1;
-                while(low < high){
-                int low = j + 1;
-            for(int j = i + 1; j < nums.length; j++){
-        for(int i = 0; i < nums.length; i++){
-            if(i < 0 && nums[i] == nums[i-1]) continue;
-        Arrays.sort(nums);
-        List<List<Integer>> result = new ArrayList<>();
-class Solution {
-    public List<List<Integer>> fourSum(int[] nums, int target) {
+                        Collections.sort(list);
+                        if(!result.contains(list)){
+                            result.add(list);
+                        }
+                        low++;
+                        while(low < nums.length && nums[low] == nums[low-1]){
+                            low++;
+                        }
+                    }
+                }
+            }
+        }
