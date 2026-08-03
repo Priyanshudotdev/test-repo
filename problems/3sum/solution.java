@@ -13,6 +13,12 @@
         List<List<Integer>> result = new ArrayList<>();
         // sort the array
         if(nums.length == 0) return new ArrayList<>(); 
-                    j++;
-                    while(j < nums.length && nums[j] == nums[j-1]){
+                    k--;
+                    while(k > 0 && nums[k] == nums[k + 1]){
             if(i > 0 && nums[i] == nums[i - 1]) continue;
+                        k--;
+                    }
+                }
+            }
+        }
+        return result;
