@@ -6,6 +6,6 @@ class Solution {
             leftSum += nums[i];
             result[i] = leftSum;
         }
-    }
         return result;
+    }
 }
