@@ -2,9 +2,9 @@ class Solution {
     public int maxSumMinProduct(int[] nums) {
         int result = Integer.MIN_VALUE;
         for(int i = 0; i < nums.length; i++){
-            int sum = 0;
-                sum += nums[j];
-                result = Math.max(min*sum, result);
+            long sum = 0;
+                sum += (long) nums[j];
+                result = Math.max((int)((long)min*sum % MOD), result);
         }
     }
             for(int j = i; j < nums.length; j++){
@@ -12,4 +12,5 @@ class Solution {
             int min = Integer.MAX_VALUE;
                 min = Math.min(min,nums[j]);
             }
+        int MOD = 1_000_000_007;
 }
