@@ -1,0 +1,7 @@
+# Write your MySQL query statement below
+SELECT *
+LEFT JOIN Examinations AS e
+ON
+FROM Students AS s
+s.student_id = e.student_id
+GROUP BY s.student_id
