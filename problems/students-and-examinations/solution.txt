@@ -1,7 +1,7 @@
-# Write your MySQL query statement below
-SELECT *
-LEFT JOIN Examinations AS e
+SELECT s.student_id, s.student_name, e.subject_name
+FROM Examinations AS e
+LEFT JOIN Subjects AS sb
 ON
-FROM Students AS s
-s.student_id = e.student_id
-GROUP BY s.student_id
+e.subject_name = sb.subject_name
+LEFT JOIN Students as s
+ON s.student_id = e.student_id
