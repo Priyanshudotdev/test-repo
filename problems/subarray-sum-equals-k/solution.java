@@ -1,19 +1,20 @@
+    }
         }
+                result += prefixSum.getOrDefault(diff, 0);
             }
-                }
-                    result++;
-                if(sum == k){
-                sum += nums[j];
+            prefixSum.put(currSum, prefixSum.getOrDefault(currSum, 0) + 1);
+        return result;
+    public int reSolve(int[] nums, int k){
+        int result = 0;
+        for(int i = 0; i < nums.length; i++){
+            int sum = 0;
             for(int j = i; j < nums.length; j++){
+                sum += nums[j];
+                if(sum == k){
+                    result++;
+                }
+            }
+        }
         return result;
     }
-            int sum = 0;
-        for(int i = 0; i < nums.length; i++){
-        int result = 0;
-    public int reSolve(int[] nums, int k){
-        return reSolve(nums, k);   
-    }
-    public int subarraySum(int[] nums, int k) {
-class Solution {
-import java.util.ArrayList;
-import java.util.List;
+    public int optimalMethod(int[] nums, int k){
