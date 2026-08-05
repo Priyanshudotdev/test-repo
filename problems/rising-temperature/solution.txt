@@ -1,0 +1,9 @@
+FROM Weather as today
+WHERE EXISTS (
+    WHERE yesterday.temperature < today.temperature
+    SELECT 1 FROM Weather as yesterday
+    AND 
+    today.recordDate - yesterday.recordDate = 1
+);
+# Write your MySQL query statement below
+SELECT today.id
