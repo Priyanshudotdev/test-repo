@@ -6,7 +6,7 @@ class Solution {
        for(int right = 0; right < nums.length; right++){
             mul *= nums[right];
        }
-            while(mul > k){
+            while(mul >= k){
                 mul /= nums[left];
             }
     }
