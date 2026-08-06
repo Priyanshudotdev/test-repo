@@ -5,12 +5,12 @@
             }else{
                 left++;
                 currSum += nums[right];
-       while(left < right){
                 right--;                
             }
             op++;
+       while(left < right){
+       int currSum = 0;
+       int op = 0;
             if(currSum == x) return op;
        }
        return -1;
-    }
-}
