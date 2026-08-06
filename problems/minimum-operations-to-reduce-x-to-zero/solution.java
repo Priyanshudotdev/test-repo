@@ -8,9 +8,8 @@
                 right--;                
             }
             op++;
-       while(left < right){
+       while(left <= right){
        int currSum = 0;
        int op = 0;
-            if(currSum == x) return op;
-       }
-       return -1;
+       int right = nums.length - 1;
+       int left = 0;
