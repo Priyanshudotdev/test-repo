@@ -6,11 +6,10 @@ class Solution {
        for(int right = 0; right < nums.length; right++){
             mul *= nums[right];
        }
-            while(mul >= k){
+            while(left < nums.length && mul >= k){
                 mul /= nums[left];
             }
     }
                 left++;
             maxCount += (right-left+1);
        return maxCount;
-}
