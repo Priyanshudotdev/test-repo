@@ -1,20 +1,15 @@
-    }
+import java.util.List;
+import java.util.ArrayList;
+class Solution {
+    public int subarraySum(int[] nums, int k) {
+        int res = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0,1);
+        int prefixSum = 0;
+        for(int num: nums){
+            prefixSum += num;
+            res += map.getOrDefault(prefixSum - k, 0);
+            map.put(prefixSum, map.getOrDefault(prefixSum, 0) + 1);
         }
-                result += prefixSum.getOrDefault(diff, 0);
-            }
-            prefixSum.put(currSum, prefixSum.getOrDefault(currSum, 0) + 1);
-        return result;
-    public int reSolve(int[] nums, int k){
-        int result = 0;
-        for(int i = 0; i < nums.length; i++){
-            int sum = 0;
-            for(int j = i; j < nums.length; j++){
-                sum += nums[j];
-                if(sum == k){
-                    result++;
-                }
-            }
-        }
-        return result;
+        return res;
     }
-    public int optimalMethod(int[] nums, int k){
