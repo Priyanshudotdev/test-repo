@@ -1,9 +1,14 @@
     ) confirmation_rate
-FROM Signups AS si
-LEFT JOIN Confirmations AS c
-ON
-si.user_id = c.user_id
-GROUP BY c.user_id
         ), 2
             END
-ORDER BY c.user_id DESC;
+                ELSE 0
+                WHEN c.action = 'confirmed' THEN 1.00
+            CASE 
+        AVG(
+    ROUND(
+SELECT si.user_id,
+FROM Signups si
+LEFT JOIN Confirmations c
+ON
+si.user_id = c.user_id
+GROUP BY si.user_id;
