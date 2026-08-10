@@ -1,11 +1,9 @@
     ) confirmation_rate
-        ), 2
-            END
-                ELSE 0
-                WHEN c.action = 'confirmed' THEN 1.00
-            CASE 
-        AVG(
 FROM Signups AS si
 LEFT JOIN Confirmations AS c
 ON
 si.user_id = c.user_id
+GROUP BY c.user_id
+        ), 2
+            END
+ORDER BY c.user_id DESC;
