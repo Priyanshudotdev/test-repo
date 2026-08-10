@@ -1,0 +1,11 @@
+-- far more simpler would be find the managerId having >= 5 count and select that name
+SELECT e.name
+    FROM Employee AS em
+)
+    GROUP BY em.managerId
+    HAVING COUNT(*) >= 5
+    SELECT managerID
+WHERE e.id IN (
+FROM Employee AS e
+-- SELECT e1.name
+-- FROM Employee AS e1
