@@ -6,10 +6,10 @@ class Solution {
         int prefixSum = 0;
         for(int num: nums){
             prefixSum += num;
-        }
-    }
+            int remain = (prefixSum % k + k) % k;
             res += map.getOrDefault(remain, 0);
             map.put(remain, map.getOrDefault(remain, 0) + 1);
-            int remain = prefixSum % k;
+        }
     return res;
+    }
 }
