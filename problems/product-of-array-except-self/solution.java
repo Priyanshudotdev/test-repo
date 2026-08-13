@@ -1,19 +1,16 @@
-        // for right
-        for(int i = n - 1; i >= 0; i--){
-        for(int i = 1; i < n; i++){
-            result[i] = result[i-1] * nums[i - 1];
+            result[i] = leftProduct;
         }
-        result[0] = 1;
+            leftProduct *= nums[i];
+        // right product
         int rightProduct = 1;
-        // for left
+        for(int i = 0; i < n; i++){
+        int leftProduct = 1;
+        // left product
         int[] result = new int[n];
         int n = nums.length;
-    public int[] optimalMethod(int[] nums){
-     */
-        - now again loop but this time for right side multiplication
-            result[i] *= rightProduct;
-            rightProduct *= nums[i]; 
-        }
-        return result;
+    public int[] cleanOne(int[] nums){
     }
-    /**
+        return cleanOne(nums);
+    public int[] productExceptSelf(int[] nums) {
+class Solution {
+        for(int i = n-1; i >= 0; i--){
